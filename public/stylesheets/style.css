@@ -1,6 +1,61 @@
+* {margin:0;padding:0;}
+
 body {
-  padding: 50px;
+  background: black;
+  color: silver;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 10px;
+}
+
+#status {
+  color: dimgrey;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#cursor {
+  -webkit-animation: blink .75s linear infinite;
+     -moz-animation: blink .75s linear infinite;
+      -ms-animation: blink .75s linear infinite;
+       -o-animation: blink .75s linear infinite;
+          animation: blink .75s linear infinite;
+}
+
+
+@-webkit-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@-moz-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@-ms-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@-o-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
 }
 
 a {

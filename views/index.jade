@@ -1,2 +1,15 @@
-h1= title
-p Welcome to #{title}
+!!!
+html
+  head
+    title= title
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
+    script(src="/socket.io/socket.io.js")
+    script(src='javascripts/client.js')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    #status
+    #output-container
+    #input-container
+      span#prompt= '> '
+      span#input
+      span#cursor= '_'
